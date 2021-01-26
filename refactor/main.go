@@ -18,14 +18,14 @@ import (
 
 const (
 	// ifaceNeedle is the name of the interface we are interested in refactoring.
-	ifaceNeedle = "Wibbler"
+	ifaceNeedle = "Client"
 	// pkgNeedle is the name of the package where the interface is defined.
-	pkgNeedle = "github.com/charithe/go-ast-refactoring/example/example"
+	pkgNeedle = "github.com/elastic/cloud-on-k8s/pkg/utils/k8s"
 )
 
 func main() {
 	// find the absolute path to the example.
-	dir, err := filepath.Abs(filepath.Join("..", "example"))
+	dir, err := filepath.Abs("/home/cell/code/cloud-on-k8s/")
 	if err != nil {
 		exitOnErr(err)
 	}
